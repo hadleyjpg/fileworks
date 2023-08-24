@@ -70,6 +70,12 @@ p, body {
         gap: 30px;
     }
 
+    .col2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 120px;
+    }
+
 }
 
 nav {
@@ -104,4 +110,36 @@ button {
 
 button:hover {
     background: var(--bright-green);
+}
+
+header {
+    background: var(--pale-grey);
+}
+
+section {
+    width: 80%;
+    margin: 8vh auto;
+}
+
+.header_img img {
+    width: 100%;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cta_box img {
+    width: 130px;
+}
+
+.cta_box {
+    border: 1.5px solid var(--line);
+    margin-top: -2px;
+}
+
+.cta_box_text {
+    padding: 20px;
 }
