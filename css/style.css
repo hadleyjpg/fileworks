@@ -133,6 +133,10 @@ section {
     margin: 8vh auto;
 }
 
+section.full_width {
+    width: 100%;
+}
+
 img {
     width: 100%;
 }
@@ -189,7 +193,7 @@ button[aria-expanded=false] i.bi.bi-dash-lg {
     padding-bottom: 20px;
  }
 
- .solving_text > *:not(:first-child):not(:last-child) {
+ .solving_text > *:not(:first-child):not(:last-child),  .priorities_text > *:not(:first-child):not(:last-child) {
     border-bottom: 2px dashed var(--line);
  }
 
@@ -211,6 +215,21 @@ button[aria-expanded=false] i.bi.bi-dash-lg {
     color: var(--bright-green);
  }
 
+ .icon_bg.blue {
+    background: #CCE6FF;
+    color: #8AC2FF;
+ }
+
  .icon_bg i {
     font-size: 30px;
+ }
+
+ section.priorities {
+    background: var(--pale-blue);
+    padding: 50px 0;
+ }
+
+ .priorities_container {
+    width: 80%;
+    margin: 0 auto;
  }
