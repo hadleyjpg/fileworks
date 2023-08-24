@@ -26,10 +26,29 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--heading-text);
 }
 
+h1 {
+    font-size: 50px;
+    line-height: 58px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 27px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
 p, body {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     color: var(--body-text);
+    font-size: 16px;
+    line-height: 21px;
 }
 
 /* -----------------
@@ -72,4 +91,17 @@ nav ul {
     margin-inline-end: 0;
     padding-inline-start: 0;
     padding: 30px 0;
+}
+
+button {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: var(--light-blue);
+    border: 2px solid var(--heading-text);
+    padding: 15px 20px;
+}
+
+button:hover {
+    background: var(--bright-green);
 }
