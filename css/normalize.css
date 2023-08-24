@@ -222,6 +222,11 @@
   [type="submit"] {
     -webkit-appearance: button;
   }
+
+  button {
+    padding-block: 0;
+    padding-inline: 0;
+  }
   
   /**
    * Remove the inner border and padding in Firefox.
