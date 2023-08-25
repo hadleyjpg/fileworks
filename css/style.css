@@ -181,43 +181,59 @@ i {
 }
 
 .collapse_header h3 {
-margin-block-end: 0;
+    margin-block-end: 0;
 }
 
 .collapse_container {
-margin-top: 20px;
-padding-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 .solving_text > *:not(:first-child):not(:last-child),  .priorities_text > *:not(:first-child):not(:last-child) {
-border-bottom: 2px dashed var(--line);
+    border-bottom: 2px dashed var(--line);
 }
 
 .collapse_content {
-margin-top: 10px;
+    margin-top: 10px;
 }
 
 .icon_bg {
-width: 70px;
-height: 70px;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person .icon_bg {
+    align-items: end;
+    overflow: hidden;
 }
 
 .icon_bg.green {
-background: var(--pale-green);
-color: var(--bright-green);
+    background: var(--pale-green);
+    color: var(--bright-green);
 }
 
 .icon_bg.blue {
-background: #CCE6FF;
-color: #8AC2FF;
+    background: #CCE6FF;
+    color: #8AC2FF;
+}
+
+.icon_bg.grey {
+    background: var(--pale-grey);
+    color: #CFD9E4;
 }
 
 .icon_bg i {
-font-size: 30px;
+    font-size: 30px;
+}
+
+.person .icon_bg i {
+    margin-bottom: -10px;
+    font-size: 70px;
+    overflow: hidden;
 }
 
 section#priorities {
@@ -235,4 +251,50 @@ padding-bottom: 0;
 background: var(--light-blue);
 padding: 40px 0;
 margin-top: 50px;
+}
+
+table {
+    border: 2px solid var(--line);
+    border-top: 0;
+    margin-bottom: 20px;
+}
+
+table .table_header {
+    background: var(--pale-grey);
+    border-top: 2px solid var(--line);
+    border-bottom: 2px solid var(--line);
+    color: var(--heading-text);
+}
+
+tr {
+    display: block;
+    padding: 10px;
+}
+
+.team_text {
+    background: var(--pale-grey);
+    padding: 23px;
+}
+
+.team_text > *:not(:first-child):not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow: hidden;
+    height: 70px;
+}
+
+.person h5 {
+    margin-block-start: 0.25em;
+    margin-block-end: 0.25em;
+}
+
+.team_members {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }

@@ -376,3 +376,20 @@
   [hidden] {
     display: none;
   }
+
+  th {
+    font-weight: 500;
+  }
+
+  ol, ul {
+    margin-bottom: 0;
+    padding-left: 1.5em;
+  }
+
+  ol > *:not(:last-child), ul > *:not(:last-child) {
+    margin-bottom: 0.25em;
+  }
+
+  b {
+    font-weight: 600;
+  }
