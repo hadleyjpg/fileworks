@@ -220,7 +220,7 @@ color: #8AC2FF;
 font-size: 30px;
 }
 
-section.priorities {
+section#priorities {
 background: var(--pale-blue);
 padding: 50px 0 0;
 }
