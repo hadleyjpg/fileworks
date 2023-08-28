@@ -60,7 +60,7 @@ p, body {
 }
 
 /* -----------------
-       Layout
+       Desktop
 -------------------- */
 
 @media screen and (min-width: 1024px) {
@@ -90,30 +90,9 @@ p, body {
 
 }
 
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: baseline;
-    color: var(--heading-text);
-}
-
-nav ul {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    padding-inline-start: 0;
-    padding: 30px 0 0;
-}
-
-footer nav, footer nav ul {
-    align-items: center;
-    padding-top: 0;
-}
+/* --------------------
+        Buttons
+-------------------- */
 
 button.btn-primary {
     display: flex;
@@ -136,10 +115,9 @@ button.btn-icon {
     border: none;
 }
 
-header {
-    position: relative;
-    background: var(--pale-grey);
-}
+/* --------------------
+        General
+-------------------- */
 
 section {
     width: 80%;
@@ -160,6 +138,10 @@ img {
     gap: 30px;
 }
 
+/* --------------------
+         CTA
+-------------------- */
+
 .cta_box img {
     width: 130px;
 }
@@ -173,12 +155,20 @@ img {
     padding: 20px;
 }
 
-button[aria-expanded=true] i.bi.bi-plus-lg, button[aria-expanded=false] i.bi.bi-dash-lg, button[aria-expanded=true] p.open, button[aria-expanded=false] p.close {
-    display: none;
-}
+/* --------------------
+        Icons
+-------------------- */
 
 i {
     font-size: 22px;
+}
+
+/* --------------------
+        Collapse
+-------------------- */
+
+button[aria-expanded=true] i.bi.bi-plus-lg, button[aria-expanded=false] i.bi.bi-dash-lg, button[aria-expanded=true] p.open, button[aria-expanded=false] p.close {
+    display: none;
 }
 
 .collapse_header {
@@ -284,6 +274,10 @@ tr {
     padding: 10px;
 }
 
+/* --------------------
+         Team
+-------------------- */
+
 .team_text {
     background: var(--pale-grey);
     padding: 23px;
@@ -317,11 +311,9 @@ section#help {
     padding: 30px;
 }
 
-footer {
-    background: var(--pale-grey);
-    padding: 40px 0;
-    border-top: 2px solid var(--line);
-}
+/* --------------------
+         Nav 
+-------------------- */
 
 .navbar-toggler {
     border: none;
@@ -353,18 +345,42 @@ footer {
 }
 
 nav button[aria-expanded=false] .navbar-toggler-icon {
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter-right" viewBox="0 0 16 16"><path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z"/></svg>');
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%344854" class="bi bi-filter-right" viewBox="0 0 16 16"><path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z"/></svg>');
     font-size: 25px;
 }
 
 nav button[aria-expanded=true] .navbar-toggler-icon {
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg>');
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%344854" viewBox="0 0 12 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg>');
     font-size: 24px;
 }
 
 .navbar-collapse {
     padding-bottom: 20px;
 }
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: baseline;
+    color: var(--heading-text);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    padding: 30px 0 0;
+}
+
+/* --------------------
+        Header 
+-------------------- */
 
 section.header {
     position: relative;
@@ -381,4 +397,24 @@ section.header {
     height: 320px;
     background: #E2E6EB;
     border-top: 1.35px solid var(--body-text);
+}
+
+header {
+    position: relative;
+    background: var(--pale-grey);
+}
+
+/* --------------------
+        Footer 
+-------------------- */
+
+footer {
+    background: var(--pale-grey);
+    padding: 40px 0;
+    border-top: 2px solid var(--line);
+}
+
+footer nav, footer nav ul {
+    align-items: center;
+    padding-top: 0;
 }
