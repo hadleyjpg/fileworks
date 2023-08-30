@@ -394,3 +394,7 @@
   b {
     font-weight: 600;
   }
+
+  input:focus, textarea:focus, select:focus, button:focus {
+    outline: none;
+  }
